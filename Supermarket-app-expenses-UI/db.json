@@ -1,0 +1,327 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "expenses": [
+    {
+      "exptype": "Tax",
+      "expdate": "2023-10-31T18:30:00.000Z",
+      "expamount": 1000,
+      "id": 3
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-08-15T18:30:00.000Z",
+      "expamount": 550,
+      "id": 4
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-12-25T18:30:00.000Z",
+      "expamount": 100,
+      "id": 6
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-10-01T18:30:00.000Z",
+      "expamount": 600,
+      "id": 7
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-11-15T18:30:00.000Z",
+      "expamount": 340,
+      "id": 8
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-12-31T18:30:00.000Z",
+      "expamount": 70,
+      "id": 9
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-09-10T18:30:00.000Z",
+      "expamount": 650,
+      "id": 10
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-11-01T18:30:00.000Z",
+      "expamount": 360,
+      "id": 11
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-01-15T18:30:00.000Z",
+      "expamount": 80,
+      "id": 12
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-08-20T18:30:00.000Z",
+      "expamount": 700,
+      "id": 13
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-12-15T18:30:00.000Z",
+      "expamount": 380,
+      "id": 14
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-02-28T18:30:00.000Z",
+      "expamount": 90,
+      "id": 15
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-09-25T18:30:00.000Z",
+      "expamount": 750,
+      "id": 16
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-11-15T18:30:00.000Z",
+      "expamount": 400,
+      "id": 17
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-03-31T18:30:00.000Z",
+      "expamount": 100,
+      "id": 18
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-08-05T18:30:00.000Z",
+      "expamount": 800,
+      "id": 19
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-12-31T18:30:00.000Z",
+      "expamount": 420,
+      "id": 20
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-09-29T18:30:00.000Z",
+      "expamount": 500,
+      "id": 21
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-10-31T18:30:00.000Z",
+      "expamount": 300,
+      "id": 22
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-07-04T18:30:00.000Z",
+      "expamount": 50,
+      "id": 23
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-11-30T18:30:00.000Z",
+      "expamount": 550,
+      "id": 24
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-12-25T18:30:00.000Z",
+      "expamount": 320,
+      "id": 25
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-08-15T18:30:00.000Z",
+      "expamount": 60,
+      "id": 26
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-10-01T18:30:00.000Z",
+      "expamount": 600,
+      "id": 27
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-11-15T18:30:00.000Z",
+      "expamount": 340,
+      "id": 28
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-12-31T18:30:00.000Z",
+      "expamount": 70,
+      "id": 29
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-09-10T18:30:00.000Z",
+      "expamount": 650,
+      "id": 30
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-11-01T18:30:00.000Z",
+      "expamount": 360,
+      "id": 31
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-01-15T18:30:00.000Z",
+      "expamount": 80,
+      "id": 32
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-12-15T18:30:00.000Z",
+      "expamount": 380,
+      "id": 34
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-02-28T18:30:00.000Z",
+      "expamount": 90,
+      "id": 35
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-09-25T18:30:00.000Z",
+      "expamount": 750,
+      "id": 36
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-11-15T18:30:00.000Z",
+      "expamount": 400,
+      "id": 37
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-03-31T18:30:00.000Z",
+      "expamount": 100,
+      "id": 38
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-08-05T18:30:00.000Z",
+      "expamount": 800,
+      "id": 39
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-12-31T18:30:00.000Z",
+      "expamount": 420,
+      "id": 40
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-07-04T18:30:00.000Z",
+      "expamount": 50,
+      "id": 41
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-09-29T18:30:00.000Z",
+      "expamount": 500,
+      "id": 42
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-10-31T18:30:00.000Z",
+      "expamount": 300,
+      "id": 43
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-11-30T18:30:00.000Z",
+      "expamount": 50,
+      "id": 44
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-12-25T18:30:00.000Z",
+      "expamount": 550,
+      "id": 45
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-08-15T18:30:00.000Z",
+      "expamount": 60,
+      "id": 46
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-11-15T18:30:00.000Z",
+      "expamount": 340,
+      "id": 48
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-12-31T18:30:00.000Z",
+      "expamount": 70,
+      "id": 49
+    },
+    {
+      "exptype": "Tax",
+      "expdate": "2023-09-10T18:30:00.000Z",
+      "expamount": 650,
+      "id": 50
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-10-02T18:30:00.000Z",
+      "expamount": 9999,
+      "id": 51
+    },
+    {
+      "exptype": "ElectricityBill",
+      "expdate": "2023-10-03T18:30:00.000Z",
+      "expamount": 2020,
+      "id": 52
+    },
+    {
+      "exptype": "Water",
+      "expdate": "2023-10-04T18:30:00.000Z",
+      "expamount": 900,
+      "id": 53
+    },
+    {
+      "exptype": "Water",
+      "expdate": "2023-09-30T18:30:00.000Z",
+      "expamount": 2000,
+      "id": 54
+    },
+    {
+      "exptype": "Water",
+      "expdate": "2023-09-30T18:30:00.000Z",
+      "expamount": 9999,
+      "id": 55
+    },
+    {
+      "exptype": "Rent",
+      "expdate": "2023-10-03T18:30:00.000Z",
+      "expamount": 9898,
+      "id": 56
+    }
+  ]
+}

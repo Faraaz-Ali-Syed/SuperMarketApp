@@ -1,0 +1,207 @@
+.margin {
+    margin-top: 100px;
+}
+
+
+/* cart.component.css */
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+  }
+  
+  .cart-item {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+  }
+  
+  .cart-item img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .product-details h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+  }
+  
+  .order-summary {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+
+    h3{
+        padding-left: 18px;
+        font-weight: bold;
+    }
+    h4{
+        
+        font-weight: bold;
+    }
+  }
+  
+  .order-summary h3 {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  /* cart.component.css */
+.place-order-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #5be29a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .place-order-button:hover {
+    background-color: #a100b3;
+  }
+  
+  .place-order-button:active {
+    animation: blast 0.2s;
+  }
+  
+  @keyframes blast {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .quantity-controls {
+    display: flex;
+    align-items: center; 
+    /* Vertically center the buttons and quantity */
+  }
+  
+  .quantity-controls button {
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #5be29a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+     /* Add margin to separate the buttons */
+  }
+  
+  .quantity-controls button:hover {
+   color: #a100b3;
+  }
+
+  .payment-methods {
+    display: flex;
+  }
+
+  
+  
+  .radio-container {
+    display: block;
+    position: relative;
+    margin: 20px;
+    padding-top: 20px;
+  }
+  
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+   
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+  }
+  
+  .bank-icon {
+    max-width: 30px; /* Set the maximum width for the bank icons */
+    max-height: 30px;
+    border-radius: 100px; /* Set the maximum height for the bank icons */
+  }
+  
+  .radio-container img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .radio-container input:checked ~ .checkmark {
+    box-shadow: 0px 0px 10px #5be29a;
+    
+  }
+  
+  .radio-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .radio-container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 50%;
+  }
+
+  .radio-container:hover {
+    cursor:pointer;
+  }
+  
+  
+  

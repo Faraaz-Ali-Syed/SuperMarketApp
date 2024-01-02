@@ -1,0 +1,81 @@
+<!-- cart.component.html -->
+<div class="margin">
+<div class="cart-page">
+    <h2>Your Cart  <i class="fa fa-shopping-cart"></i></h2>
+  
+    <div class="cart-items">
+        <div class="cart-item">
+          <img src="https://th.bing.com/th/id/R.6c95129afe9b59a0c4f7a19fdff32b54?rik=YB8ZAajtrqRykA&riu=http%3a%2f%2fshoplocal.dundalk.ie%2fwp-content%2fuploads%2f2016%2f07%2fstationery1.jpg&ehk=zEcwLLUlUPMOQ5L8VGqxrDcNmoNgersVHLB6smbTPJE%3d&risl=&pid=ImgRaw&r=0" alt="Product 1" />
+          <div class="product-details">
+            <h3>Stationary Material</h3>
+            <p>Price: $20.00</p>
+            <div class="quantity-controls">
+              <p>Quantity</p>
+              <button class="decrement" (click)="decrementQuantity(0)">-</button>
+              <p class="quantity">{{ quantities[0] }}</p>
+              <button class="increment" (click)="incrementQuantity(0)">+</button>
+            </div>
+            <p>Total Price: ${{ calculateTotal(0) }}</p>
+          </div>
+        </div>
+      
+        <div class="cart-item">
+          <img src="https://th.bing.com/th/id/OIP.H8CwyMM4YGjsOVguPmhIGAHaHa?pid=ImgDet&rs=1" alt="Product 2" />
+          <div class="product-details">
+            <h3>Cleaning Material</h3>
+            <p>Price: $25.00</p>
+            <div class="quantity-controls">
+              <p>Quantity</p>
+              <button class="decrement" (click)="decrementQuantity(1)">-</button>
+              <p class="quantity">{{ quantities[1] }}</p>
+              <button class="increment" (click)="incrementQuantity(1)">+</button>
+            </div>
+            <p>Total Price: ${{ calculateTotal(1) }}</p>
+          </div>
+        </div>
+        <!-- Add more cart items as needed -->
+      </div>
+
+      <div class="payment-methods">
+        <label class="radio-container">
+          <input type="radio" name="payment" value="paytm">
+          <span class="checkmark">
+            <img src="https://cdn3.iconfinder.com/data/icons/seo-long-shadow/36/creaditcard-512.png" alt="Paytm" class="bank-icon">
+          </span>
+        </label>
+      
+        <label class="radio-container">
+          <input type="radio" name="payment" value="phonepay">
+          <span class="checkmark">
+            <img src="https://th.bing.com/th/id/R.4b3e13b0b49778c8eacd2b276f9f47c3?rik=cnzijvJPePYxcw&riu=http%3a%2f%2flh3.googleusercontent.com%2f76EHVNZV54QmXL4y9kstkwSRQRp6CJHUJzXe2n1F_nV_k2wpcS2b9LxSNabdVvcJmg%3dw300&ehk=Nu4B5VFPlxVp1SWXMEWlNxf8fDE077xta3epqR8hRZM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="PhonePe" class="bank-icon">
+          </span>
+        </label>
+      
+        <label class="radio-container">
+          <input type="radio" name="payment" value="googlepay">
+          <span class="checkmark">
+            <img src="https://th.bing.com/th/id/OIP.vWA5AJkV1-cB4Eck3z0vvgHaHZ?pid=ImgDet&rs=1" alt="Google Pay" class="bank-icon">
+          </span>
+        </label>
+      
+        <label class="radio-container">
+          <input type="radio" name="payment" value="debitcard">
+          <span class="checkmark">
+            <img src="https://th.bing.com/th/id/OIP.VYzjBn8pn1SNmD49XqW0owAAAA?pid=ImgDet&w=250&h=250&rs=1" alt="Debit Card" class="bank-icon">
+          </span>
+        </label>
+      </div>
+      
+      
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <p>Delivered To: Primary Address</p>
+        <p>Subtotal: ${{ calculateSubtotal() }}</p>
+        <p>Shipping: $5.00</p>
+        <h4>Total: ${{ grandTotal }}</h4>
+      </div>
+      
+      
+    <button class="place-order-button">Place Order</button>
+  </div></div>
+  

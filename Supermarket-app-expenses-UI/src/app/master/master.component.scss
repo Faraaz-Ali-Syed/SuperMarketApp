@@ -1,0 +1,196 @@
+.margin {
+    margin-top: 50px;
+
+}
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.063rem 0 1.25rem 0 #d2d2d2;
+    
+    text-shadow: 0.5px 0.5px 1px #1d8d5e;
+    margin-top: 13px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header1 {
+    margin: 0; /* Remove any default margin */
+  }
+
+  .sizzling-form {
+    display: flex;
+   text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e8f7fd; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.sizzling-form label {
+    width: 20%;
+    font-weight: bold;
+}
+
+.sizzling-form input {
+    width: 20%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    background-color: #ccffce;
+  font-weight: 1000;
+    color: #5ddc89;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 5px;
+    padding-top: 4px;
+   margin-right: 20px;
+   margin-bottom: 11px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #afdfc5;
+}
+
+.supermarket-id {
+    padding-right: 200px;
+}
+
+.beautiful-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgb(185, 185, 185);
+    background-color: #fff;
+}
+
+.beautiful-table th, .beautiful-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.edit-button {
+  
+    color: #5be29a;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 6px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 50px;
+}
+
+.beautiful-table th {
+    background-color: #ebf7ff;
+    color: #2b8eeb;
+    font-weight: 1000;
+}
+
+td:hover {
+    background-color: #e2ffe3;
+    cursor:pointer;
+}
+
+
+.delete-button {
+   
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 6px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.delete-button {
+  
+    color: #ff2d2d;
+    margin-left: 5px;
+    right: 10px;
+}
+
+.delete-button:hover {
+  
+    color: #b40000;
+   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+  
+}
+
+.grid-item {
+    flex: 1;
+    padding: 10px;
+   
+}
+
+
+
+.edit-button:hover {
+  
+    color: #3aa77e;
+}
+
+.vendor-button {
+    display: block; /* Make the button a block-level element to center it */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px; /* Add some padding to make it visually appealing */
+    background-color: #5b8ae2; /* Set the background color */
+    color: white; /* Set the text color to white */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust the font size */
+    cursor: pointer; /* Change the cursor to a pointer on hover for usability */
+    margin-top: 40px;
+    box-shadow: 0px 0px 7px rgb(155, 155, 155);
+  }
+  
+  .vendor-button:hover {
+    background-color: #80b0ec; /* Change the background color on hover */
+  }
+  
+  .button-td {
+   padding-right: 20px; 
+  }
+  
+  .vendortr:hover{
+    background-color: #e2ffe3;
+  }
+
+
+/* Add styling for hover effect and odd/even row colors */
+
+/* You can customize colors, font styles, and additional styling as needed. */

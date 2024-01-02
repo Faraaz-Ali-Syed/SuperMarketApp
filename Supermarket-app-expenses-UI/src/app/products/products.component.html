@@ -1,0 +1,399 @@
+<header>
+<h1>Products</h1>
+</header>
+<div class="card">
+    <div class="card-head"><div class=animate1>You don't need to contact the vendor and purchase the product(s), Just search and buy it in this online app directly! No hectic of payment as well! We provide vast payment services through online! Search any product on the basis of Category and Brands!</div></div>
+    
+</div>
+<div class="centered-search">
+    <mat-form-field class="half-width">
+      <mat-label>Search for Products, Brands and More</mat-label>
+      <input matInput placeholder="Let me search for you! Please Enter Something!" #input [matAutocomplete]="auto" [formControl]="searchForm">
+    </mat-form-field>
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="optionSelected($event)">
+      <mat-option *ngFor="let suggestion of filteredSuggestions" [value]="suggestion">
+        {{ suggestion }}
+      </mat-option>
+    </mat-autocomplete>
+  </div>
+  
+  <div class="container1">
+    <div class="wrapper1">
+        <img src="../../assets/1.jpg">
+        <img src="../../assets/2.jpg">
+        <img src="../../assets/3.jpg">
+        <img src="../../assets/4.jpg">
+        <img src="../../assets/5.jpg">
+        <img src="../../assets/6.jpg">
+        <img src="../../assets/1.jpg">
+        <img src="../../assets/2.jpg">
+    </div>
+</div>
+
+
+<div class="card">
+    
+<div class="image-row">
+    <div class="image-container">
+      <img src="../../assets/22.jpg" alt="Image 1" class="rounded-image"><p>Offers and Rewards</p>
+    </div>
+    <div class="image-container">
+      <img src="../../assets/11.jpg" alt="Image 2" class="rounded-image"><p>Personal & Hygiene</p>
+    </div>
+    <div class="image-container">
+      <img src="../../assets/77.jpg" alt="Image 3" class="rounded-image"><p>Cooking Oil/Cereals</p>
+    </div>
+    <div class="image-container">
+      <img src="../../assets/44.jpg" alt="Image 4" class="rounded-image"><p>Home Cleaning Material</p>
+    </div>
+    <div class="image-container">
+      <img src="../../assets/55.jpg" alt="Image 5" class="rounded-image"><p>Fresh Packaged Food</p>
+    </div> 
+  </div>
+  
+</div>
+
+
+<div class="p1">
+	<section class="products">
+		<h5><span class="op">-------------------------------------------------</span> Current Featured Sale - Instant 25% Discount<span class="op"> -------------------------------------------------</span></h5>
+		<div class="all-products">
+			<div class="product">
+				<img src="https://th.bing.com/th/id/OIP.H8CwyMM4YGjsOVguPmhIGAHaHa?pid=ImgDet&rs=1">
+				<div class="product-info">
+					<h4 class="product-title">Cleaning Material
+					</h4>
+					<p class="product-price">$149</p>
+					<a class="product-btn" href="#">Click here</a>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="https://th.bing.com/th/id/R.6c95129afe9b59a0c4f7a19fdff32b54?rik=YB8ZAajtrqRykA&riu=http%3a%2f%2fshoplocal.dundalk.ie%2fwp-content%2fuploads%2f2016%2f07%2fstationery1.jpg&ehk=zEcwLLUlUPMOQ5L8VGqxrDcNmoNgersVHLB6smbTPJE%3d&risl=&pid=ImgRaw&r=0">
+				<div class="product-info">
+					<h4 class="product-title">Stationary Material
+					</h4>
+					<p class="product-price">$199</p>
+					<a class="product-btn" href="desc">Click here</a>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="https://th.bing.com/th/id/OIP.WO0vZlKeySm-9YHaNezVDAAAAA?pid=ImgDet&rs=1">
+				<div class="product-info">
+					<h4 class="product-title">Groceries 10x Pack
+					</h4>
+					<p class="product-price">$999</p>
+					<a class="product-btn" href="#">Click here</a>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="https://media.istockphoto.com/photos/bags-with-cereal-grains-picture-id622800944?k=6&m=622800944&s=612x612&w=0&h=N3_ngfTQizlls4byiJO-Yc3zInePfEcpMxkbfj70dc4=">
+				<div class="product-info">
+					<h4 class="product-title">Cereal Grains Pack
+						</h4>
+					<p class="product-price">$1199*</p>
+					<a class="product-btn" href="#">Click here</a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+<div class="filter-row">
+    <label for="category" class="l1">Sort by:  </label>
+    <div class="checkbox-options">
+      <label for="highToLow">
+        <input type="checkbox" id="highToLow" name="sortBy" value="highToLow"> High to Low
+      </label>
+      <label for="lowToHigh">
+        <input type="checkbox" id="lowToHigh" name="sortBy" value="lowToHigh"> Low to High
+      </label>
+      <label for="popularity">
+        <input type="checkbox" id="popularity" name="sortBy" value="popularity"> Popularity
+      </label>
+      <label for="highestReviews">
+        <input type="checkbox" id="highestReviews" name="sortBy" value="highestReviews"> Highest Reviews
+      </label>
+      <label for="newestFirst">
+        <input type="checkbox" id="newestFirst" name="sortBy" value="newestFirst"> Newest First
+      </label>
+      <label for="50PercentDiscount">
+        <input type="checkbox" id="50PercentDiscount" name="sortBy" value="50PercentDiscount"> 50% Discount
+      </label>
+      <label for="fastestDelivered">
+        <input type="checkbox" id="fastestDelivered" name="sortBy" value="fastestDelivered"> Fastest Delivered
+      </label>
+    </div>
+   
+  </div>
+  <div class="o1">
+    <label class="l2"><span class="purple" style="color: #622ab7;">Price:</span> Min - 50$</label>
+    <input type="range" min="0" max="100" step="1" value="20" class="slider">
+    <label class="l2">Max - 10000$</label>
+  </div>
+  
+  <section class="articles" >
+    <article >
+      <div class="article-wrapper" >
+        <figure>
+          <img src="https://printcosmo.com/wp-content/uploads/2020/09/cereal-boxes-custom.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$179</h2>
+          <p>
+            Delicious, thin-cut potato chips with the perfect balance of salt and crunch. Ideal for satisfying your snack cravings. A premium quality olive oil made from hand-picked organic olives, cold-pressed to retain its rich flavor and health benefits.
+          </p>
+          <a class="read-more">
+            Add to cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.O5yfrAdqdZvA6kSMGRaxvgHaE7?pid=ImgDet&rs=1" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$79</h2>
+          <p>
+            A hearty breakfast cereal featuring whole grain oats, honey, and roasted nuts for a delightful and nutritious start to your day. A family-sized bottle of tomato ketchup, perfect for adding a burst of flavor to burgers, hot dogs, and more and more and more!          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">$209</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://eatsmartmovemoreva.org/wp-content/uploads/2014/05/153829953.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$229</h2>
+          <p>
+            Discover the convenience and excellence of our wholesale packaged food options. As a dedicated food retailer, you understand the importance of offering top-tier products. Our extensive range, featuring ready-to-cook meals, artisanal snacks, and fine ingredients, ensures your customers experience the best in culinary pleasure. Elevate your culinary creations with our premium selection.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  
+  <section class="articles">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.lnrlQRdUS2avXPUtsdkn_AHaE8?pid=ImgDet&rs=1" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$99</h2>
+          <p>
+            Whether you're maintaining a commercial kitchen, a healthcare facility, or an office space, our wholesale cleaning materials are tailored to deliver exceptional cleanliness and hygiene. With a commitment to quality and affordability, we offer bulk quantities of cleaning supplies, including microfiber cloths, mops, brooms, and waste bins, to ensure your facility remains spotless and sanitary.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a> 
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://www.idea2makemoney.com/wp-content/uploads/2021/12/Wholesale_Oil_Business5-1024x683.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$89</h2>
+          <p>
+            As a food retailer or restaurant, your customers expect the best, and that's exactly what our wholesale packaged foods deliver. Explore our extensive range of artisanal goods, from hand-picked spices to unique condiments, and ensure your dishes are a cut above the rest. With our selection, your culinary creations will leave a lasting impression.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://static.politico.com/dims4/default/ac6ccbb/2147483647/resize/658x%3C/quality/90/?url=https:%2F%2Fstatic.politico.com%2Fdf%2F6a%2Fc7fa0c484dc5827502a5d734aad8%2Fsecondary2-vegetabletech-justin-sullivan-gettyimages.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$259</h2>
+          <p>
+            For discerning food businesses, our wholesale packaged food selection is a treasure trove of possibilities. Discover the flavors of the world in our range, featuring authentic ingredients, delectable sauces, and irresistible snacks that will make your offerings stand out.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  
+  <section class="articles">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://kuow-prod.imgix.net/store/54b7041bca8935191722cc0c1e35871b.jpg?ixlib=rails-2.1.4&auto=format&crop=faces&fit=crop&h=634&w=924" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$299</h2>
+          <p>
+            Experience the finest in wholesale packaged foods with our extensive range of products. From handcrafted pastas to specialty spices, our offerings are handpicked to satisfy the most demanding culinary requirements. Elevate your dishes and impress your patrons with our premium selection.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://cdn.openpr.com/U/1/U104835041_g.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$349</h2>
+          <p>
+            When it comes to wholesale packaged foods, we're your one-stop shop for quality and variety. Our range encompasses gourmet snacks, imported delicacies, and locally sourced ingredients that are sure to captivate your customers' taste buds and keep them coming back for more.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.1t-K-Tpjl730XuGVRj1-LQHaEX?pid=ImgDet&rs=1" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$139</h2>
+          <p>
+            Elevate your culinary creations with our wholesale packaged food selection. Our products include premium pastas, flavorful spices, and gourmet sauces that will enhance the dining experience at your establishment. Satisfy your customers with the finest ingredients available.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  
+  <section class="articles">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://ecofriend.com/wp-content/uploads/2019/09/Indian-Packaged-Food.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$149</h2>
+          <p>
+            For foodservice businesses seeking premium wholesale packaged foods, we've got you covered. From delectable appetizers to indulgent desserts, our offerings are crafted to impress even the most discerning palates. Elevate your menu with our handpicked selection.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://c8.alamy.com/comp/E5KXX0/peanuts-and-seeds-kentriki-agora-the-central-market-hall-central-athens-E5KXX0.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$199</h2>
+          <p>
+            If you're in the market for wholesale packaged foods, look no further. Our extensive range includes organic snacks, artisanal sauces, and internationally sourced ingredients. You'll find everything you need to create mouthwatering dishes that will keep your customers coming back for more.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://mediaproxy.salon.com/width/1200/https://media.salon.com/2021/05/packaged-foods-0505211.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>$209</h2>
+          <p>
+            Dive into the world of culinary delights with our wholesale collection of packaged foods. From gourmet pasta to exotic spices, our range caters to the finest tastes. Every product is carefully selected to meet the highest quality standards, making it a must-have for any food retailer or restaurant looking to elevate their menu.          </p>
+          <a href="#" class="read-more">
+            Add to Cart <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  
+  <div class="pagination-container">
+    <button class="pagination-button previous">Previous Page</button>
+    <div class="pagination-pages">
+      <button class="pagination-button active">1</button>
+      <button class="pagination-button">2</button>
+      <button class="pagination-button">3</button>
+      <button class="pagination-button">4</button>
+      <button class="pagination-button">5</button>
+      <button class="pagination-button">6</button>
+      <button class="pagination-button">7</button>
+      <button class="pagination-button">8</button>
+      <button class="pagination-button">9</button>
+      <button class="pagination-button">10</button>
+    </div>
+    <button class="pagination-button next">Next Page</button>
+  </div>
+  
+
+
+  

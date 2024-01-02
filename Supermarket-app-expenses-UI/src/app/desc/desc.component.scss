@@ -1,0 +1,305 @@
+
+.card{
+    box-shadow: 0 6px 6px rgba(#000, 0.3);
+    transition: 200ms;
+    background: #fff;
+    
+    .card__title{
+      display: flex;
+      align-items: center;
+      padding: 30px 40px;
+      
+      h3{
+        flex: 0 1 200px;
+        text-align: right;
+        margin: 0;
+        color: #252525;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      
+      .icon{
+        flex: 1 0 10px;
+        background: #5011d8;
+        color: #fff;
+        padding: 10px 10px;
+        transition: 200ms;
+        
+        > a{
+          color: #fff;
+        }
+        
+        &:hover{
+          background: #252525;
+        }
+      }
+    }
+    
+    .card__body{
+      padding: 0 40px;
+      display: flex;
+      flex-flow: row no-wrap;
+      margin-bottom: 25px;
+      
+      > .half{
+        box-sizing: border-box;
+        padding: 0 15px;
+        flex: 1 0 50%;
+      }
+      
+      .featured_text{
+        h1{
+          margin: 0;
+          padding: 0;
+          font-weight: 800;
+          font-family: "Montserrat", sans-serif;
+          font-size: 25px;
+          line-height: 50px;
+          color: #181e28;
+        }
+        
+        p{
+          margin: 0;
+          padding: 0;
+          
+          &.sub{
+            font-family: "Montserrat", sans-serif;
+            font-size: 26px;
+            text-transform: uppercase;
+            color: #686e77;
+            font-weight: 300;
+            margin: 5px;
+          }
+          
+          &.price{
+            font-family: "Fjalla One", sans-serif;
+            color: #252525;
+            font-size: 26px;
+            margin: 5px;
+          }
+        }
+      }
+      
+      .image{
+        padding-top: 15px;
+        width: 100%;
+        
+        img{
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      
+      .description{
+        margin-bottom: 25px;
+        
+        p{
+          margin: 0;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          line-height: 27px;
+          font-size: 16px;
+          color: #555;
+        }
+      }
+      
+      span.stock{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color: #a1cc16;
+      }
+      
+      .reviews{
+        .stars{
+          display: inline-block;
+          list-style: none;
+          padding: 0;
+          
+          > li{
+            display: inline-block;
+            
+            .fa{
+              color: #f7c01b;
+            }
+          }
+        }
+        
+        > span{
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          margin-left: 5px;
+          color: #555;
+        }
+      }
+    }
+    
+    .card__footer{
+      padding: 30px 40px;
+      display: flex;
+      flex-flow: row no-wrap;
+      align-items: center;
+      position: relative;
+      
+      &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 40px;
+        width: calc(100% - 40px);
+        height: 3px;
+        background: #4911d8;
+        background: linear-gradient(to right, #115dd8 0%,#115dd8 20%,#ddd 20%,#ddd 100%);
+      }
+      
+      .recommend{
+        flex: 1 0 10px;
+        
+        p{
+          margin: 0;
+          font-family: "Montserrat", sans-serif;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 14px;
+          color: #555;
+        }
+       
+        h3{
+          margin: 0;
+          font-size: 20px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #6435da;
+        }
+      }
+      
+      .action{
+        button{
+          cursor: pointer;
+          border: 1px solid #d016ff;
+          padding: 14px 30px;
+          border-radius: 200px;
+          color: #fff;
+          background: #8c28f0;
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          transition: 200ms;
+          margin: 10px;
+          
+          &:hover{
+            background: #fff;
+            color: #7931ed;
+          }
+        }
+      }
+    }
+  }
+/* Add your CSS styles to style the components as described */
+.margin {
+    margin-top: 80px;
+    margin-left: 100px;
+  }
+  
+  .product-wrapper {
+    display: flex;
+    gap: 100px;
+    width: 1300px;
+     /* Gap between the featured product and other products */
+  }
+  
+  .featured-product {
+    flex: 1; /* Takes up more space */
+    /* Add your styling for the featured product here */
+  }
+  
+  .other-products {
+    flex: 2; /* Takes up less space */
+    display: flex;
+    flex-direction: column;
+    gap: 200px; /* Gap between other products */
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute cards evenly within the container */
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 1200px; /* Optional: Set a maximum width to control the number of cards per row */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .product-card {
+   /* Each card occupies 33.33% of the container width (minus spacing) */
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    width: 150px; /* Make the image take the full width of the card */
+    height: 150px; /* Maintain aspect ratio */
+   
+    border-radius: 20px; /* Optional: Set a maximum height for the image */
+  }
+
+  /* Style the "Add to Cart" button */
+.add-to-cart-button {
+    background-color: #b31ad2; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove the default button border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth color transition on hover */
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #9e3dbb; /* Background color on hover */
+  }
+
+
+  ////////////////////////////
+  
+
+  
+  
+  .card1 {
+    width: 1000px;
+    height: 220px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content1 {
+    padding: 10px;
+  }
+  
+  .offer {
+    margin: 10px 0;
+  }
+  
+  .tc {
+    font-weight: bold;
+    color: #7300ff; /* Blue color for Terms & Conditions */
+  }
+  
+  .special-price {
+    background-color: #aa00ff; /* Blue background for special price */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+
+
+  

@@ -1,0 +1,67 @@
+
+<mat-toolbar color="primary" class="center-text" style=" background-color: #622ab7;">
+    <div class="header-container" >
+      <span class="header1">Dashboard</span>
+    </div>
+    
+</mat-toolbar> 
+
+<mat-toolbar color="primary" class="center-text" style="background-color: #ffffff; color: #5be29a;">
+    <div class="header-container">
+      <div class="center-header"> <!-- New div for centering -->
+        <span class="header1">Vendors</span>
+      </div>
+    </div>
+  </mat-toolbar>
+        
+  <div class="page-container">
+
+      
+    <div class="main-content">
+
+        <div class="table-container">
+          
+            <table style="width: 800px; box-shadow: 0px 0px 10px rgb(172, 172, 172);">
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Vendor Name</th>
+                  <th>Address</th>
+                  <th>Contact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of displayedRows(); let i = index" [ngClass]="getRowClass(i)">
+                  <td >{{ row.sNo }}</td>
+                  <td style="text-align: center;">{{ row.vendorName }}</td>
+                  <td>{{ row.address }}</td>
+                  <td>{{ row.contact }}</td>
+                </tr>
+              </tbody>
+            </table>
+          
+            <div class="pagination">
+              <label for="itemsPerPage">Items per Page:</label>
+              <select id="itemsPerPage" [(ngModel)]="itemsPerPage">
+                <option value="5">10</option>
+                <option value="10">30</option>
+                <option value="30">100</option>
+              </select>
+              <button (click)="nextPage()">EDIT VENDOR DETAILS</button>
+            </div>
+          </div>
+
+        <div id="chart">
+            <apx-chart
+              [series]="chartOptions.series"
+              [chart]="chartOptions.chart"
+              [labels]="chartOptions.labels"
+              [title]="chartOptions.title"
+              [theme]="chartOptions.theme"
+              [responsive]="chartOptions.responsive"
+            ></apx-chart>
+          </div>
+          
+    
+  </div>
+  </div>

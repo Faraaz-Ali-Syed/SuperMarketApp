@@ -1,0 +1,108 @@
+
+
+
+<mat-toolbar color="primary"  style=" background-color: #622ab7;">
+  <div class="header-container" >
+    <span class="header1">Expenses</span>
+  </div>
+  
+    
+      
+      
+     
+      
+  </mat-toolbar> 
+  <mat-toolbar color="primary" class="center-text" style=" background-color: #ffffff; color:#5be29a;">
+    <div class="header-container" >
+      <span class="header1">Expenses</span>
+    </div>
+    
+      
+        
+        
+       
+        
+    </mat-toolbar> 
+    
+  
+ 
+  <div class="main-body">
+    
+    <div class="button-container">
+
+      <mat-form-field class="half-width">
+        <mat-label>Search Expenses</mat-label>
+        <input matInput (keyup)="applyFilter($event)" class="half-width" placeholder="Example: Tax" #input>
+      </mat-form-field>
+
+      <div class="spacer"></div>
+      <button mat-raised-button (click)="openAddEditEmpForm()" class="btn">ADD EXPENSE</button>
+
+    </div>
+   
+  
+    
+    
+  <div id="tbwidth">
+    <div class="card">
+    <div class="table-container">
+      <table mat-table [dataSource]="dataSource" matSort>
+    
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> <div style="text-align: right;"> ID</div> </th>
+          <td mat-cell *matCellDef="let row" > {{row.id}} </td>
+        </ng-container>
+        <!-- background-color: #ebf7ff;
+        color: #2b8eeb;
+        font-weight: 1000; -->
+        <!-- Progress Column -->
+        <ng-container matColumnDef="expense_type">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style=" background-color: #ebf7ff;font-weight: 1000; color: #2b8eeb;padding-left: 150px"> Expense Type </th>
+          <td mat-cell *matCellDef="let row" style="padding-left: 150px"> {{row.expense_type}} </td>
+        </ng-container>
+     
+        <!-- Name Column -->
+        <ng-container matColumnDef="expense_date">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style=" background-color: #ebf7ff;font-weight: 1000; color: #2b8eeb;"> Expense Date </th>
+          <td mat-cell *matCellDef="let row"> {{row.expense_date | date}} </td>
+        </ng-container>
+    
+        <!-- Fruit Column -->
+        <ng-container matColumnDef="expense_amount">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style=" background-color: #ebf7ff;font-weight: 1000; color: #2b8eeb;padding-left: 150px;padding-right: 0px;"><div style="text-align: right;">Expense Amount</div> </th>
+          <td mat-cell *matCellDef="let row" class="right-align" style="padding-right: 150px"> {{row.expense_amount | currency:'USD'}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style=" background-color: #ebf7ff;font-weight: 1000; color: #2b8eeb;padding: 0px;padding-left: 80px;padding-right: 50px;"> Action </th>
+          <td mat-cell *matCellDef="let row"  style="padding-left: 60px;"> 
+              <button mat-icon-button color="primary" (click)="openEditForm(row)" style=" color:rgb(79, 158, 255);">
+                  <mat-icon>edit</mat-icon>
+          </button> 
+          <button mat-icon-button color="warn" (click)="deleteExpense(row.id)">
+              <mat-icon>delete</mat-icon>
+      </button>
+      </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+    [style.background-color]="(rowHovered && rowHovered === row) ? '#e9ffee' : (row.id % 2 === 0 ? '#f8fff9' : '#fff')"
+    [style.color]="row.id % 2 === 0 ? 'black' : 'black'"
+    (mouseenter)="rowHovered = row"
+    (mouseleave)="rowHovered = null"></tr>
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+        </tr>
+      </table>
+     
+      <mat-paginator [pageSizeOptions]="[10, 30, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+  </div>
+</div>
+  </div>
+
+    
+  
+    

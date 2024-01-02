@@ -1,0 +1,128 @@
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.063rem 0 1.25rem 0 #d2d2d2;
+    
+    text-shadow: 0.5px 0.5px 1px #125c1e;
+    margin-top: 13px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header1 {
+    margin: 0; /* Remove any default margin */
+  }
+
+  #chart {
+    max-width: 1000px;
+    margin: 35px auto;
+  }
+
+  
+.table-container {
+    max-width: 1300px;
+    margin: 20px auto;
+    background-color: #fff;
+  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    background-color: #ebf7ff;
+    color: #2b8eeb;
+    font-weight: 1000;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #e9ffee;
+  }
+
+  td {
+    padding: 1px;
+  }
+  
+  thead {
+    background-color: #f0f0f0;
+  }
+  
+  .sort-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+
+  /* Style for the Download Invoice button */
+.download-button {
+     /* Background color */
+    color: #22ed87; /* Text color */
+    border: none; /* Remove border */
+    padding: 5px; /* Add padding */
+    border-radius: 100px; /* Add rounded corners */
+    cursor: pointer; /* Add hover effect */
+    font-size: 10px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  
+    /* Add shadow for a 3D effect */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for the Download Invoice button */
+  .download-button:hover {
+    background-color: #b5ffd7; /* Darker background color on hover */
+  }
+  
+  /* Center the button text */
+  .download-button span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  /* Add alternating row background colors */
+.even-row {
+    background-color: #fff; /* White background for even rows */
+  }
+  
+  .odd-row {
+    background-color: #f8fff9; /* Pink background for odd rows */
+  }
+
+  .table-container th:first-child,
+.table-container td:first-child {
+  text-align: right; /* Align S.No column to the right */
+}
+
+.table-container td:nth-child(2),
+.table-container td:nth-child(5) {
+  text-align: right; /* Align Quantity and Tax Amount columns to the right */
+}
+  

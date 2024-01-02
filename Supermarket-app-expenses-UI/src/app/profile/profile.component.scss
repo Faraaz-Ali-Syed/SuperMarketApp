@@ -1,0 +1,127 @@
+.margin {
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin-top: 100px;
+  }
+  
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff6f6;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .profile-image img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .profile-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit-button, .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .save-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .save-button:disabled {
+    background-color: #fef6ff;
+    cursor: not-allowed;
+  }
+  
+
+  .profile-header {
+   /* Background color for the header */
+    text-align: center; /* Center-align text and image */
+    padding: 20px; /* Add padding for spacing */
+  
+    /* Styling for the image */
+    img {
+      width: 150px; /* Set image width */
+      height: 150px; /* Set image height */
+      border-radius: 50%; /* Create a circular image shape */
+      border: 5px solid #fff; /* Add a white border */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Apply a subtle shadow */
+    }
+  
+    h2 {
+      color: #fff; /* Text color for the heading */
+      font-size: 24px; /* Font size for the heading */
+      margin-top: 10px; /* Space between image and heading */
+    }
+  }
+  .form-actions {
+    text-align: center; /* Center-align the buttons */
+  }
+  
+  .edit-button, .save-button {
+    margin: 7px; /* Margin around the buttons */
+    padding: 10px 20px; /* Padding for the buttons */
+    font-size: 16px; /* Font size for the buttons */
+    border: none; /* Remove button borders */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Rounded corners for buttons */
+  }
+  
+  .edit-button {
+    background-color: #5be29a; /* Blue background color for "Edit" button */
+    color: #fff; /* Text color for "Edit" button */
+  }
+  
+  .save-button {
+    background-color: #4F95DA; /* Green background color for "Save" button */
+    color: #333; /* Text color for "Save" button */
+  }
+  
+  .save-button:disabled {
+    background-color: #ccc; /* Grayed-out background for disabled "Save" button */
+    cursor: not-allowed; /* Change cursor to "not-allowed" for disabled button */
+  }
+  

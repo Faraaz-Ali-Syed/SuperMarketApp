@@ -1,0 +1,19 @@
+<!-- vendor-dialog.component.html -->
+<h2 mat-dialog-title>Enter Vendor Details</h2>
+<mat-dialog-content>
+  <form>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Vendor Name" [(ngModel)]="vendorName" name="vendorName">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Vendor Address" [(ngModel)]="vendorAddress" name="vendorAddress">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Vendor Contact" [(ngModel)]="vendorContact" name="vendorContact">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onAddClick()" style="background-color: rgb(79, 158, 255);color:white">Add</button>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+</mat-dialog-actions>

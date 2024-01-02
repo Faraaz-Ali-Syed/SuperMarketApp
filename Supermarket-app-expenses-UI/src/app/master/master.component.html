@@ -1,0 +1,176 @@
+
+<mat-toolbar color="primary" class="center-text" style=" background-color: #622ab7;">
+    <div class="header-container" >
+      <span class="header1">Dashboard</span>
+    </div>
+    
+</mat-toolbar> 
+<mat-toolbar color="primary" class="center-text" style=" background-color: #ffffff; color:#5be29a;">
+  <div class="header-container" >
+    <span class="header1">Master Data</span>
+  </div>
+</mat-toolbar> 
+
+<div class="card" style="align-items: center;">
+  
+ 
+    <div class="card-head"><p style="font-size: 15px; font-weight: 10px; color: rgb(116, 116, 116);">Add/Edit/Delete the primary data of your Supermarket!</p></div>
+    
+  </div>
+
+
+  <div class="margin">
+    <div class="sizzling-form">
+        <label for="supermarket-id">Supermarket ID:</label>
+        <input type="text" class="supermarket-id" value="SK014561" style="background-color: #bfe5d4;width:10%" readonly>
+        <label for="expense-type">Expense Type:</label>
+        <input type="text" id="expense-type" [(ngModel)]="newExpenseType">
+        <button  class="add-button" (click)="addExpenseType(newExpenseType)"><mat-icon>add</mat-icon></button>
+        
+        <label for="category">Category:</label>
+        <input type="text" id="category" [(ngModel)]="newCategory">
+        <button class="add-button" (click)="addCategory(newCategory)"><mat-icon>add</mat-icon></button>
+        
+        <label for="brand">Brand:</label>
+<input type="text" id="brand" [(ngModel)]="newBrand">
+<button class="add-button" (click)="addBrand(newBrand)"><mat-icon>add</mat-icon></button>
+
+<!--     
+        <label for="vendor-name">Vendor Name:</label>
+        <input type="text" id="vendor-name">
+        <button class="add-button"><mat-icon>add</mat-icon></button>
+     -->
+     <label for="transaction-type">Transaction Type:</label>
+     <input type="text" id="transaction-type" [(ngModel)]="newTransactionType">
+     <button class="add-button" (click)="addTransactionType(newTransactionType)"><mat-icon>add</mat-icon></button>
+      
+    </div>
+
+   <!-- Include this button in your parent component's template -->
+<button class="vendor-button" (click)="openVendorDialog()">Add Vendor +</button>
+
+    
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-item">
+
+                <div class="grid-container">
+                    <div class="grid-row">
+                      <div class="grid-item">
+
+
+                     <!-- Include this table in your component's template -->
+<table class="beautiful-table">
+    <thead>
+      <tr>
+        <th>Vendor Name</th>
+        <th>Vendor Address</th>
+        <th>Vendor Contact</th>
+        <th style="text-align: center;width:100px">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+     <!-- Inside the <tbody> of the vendor table -->
+<tr *ngFor="let vendor of vendors; let i = index"  class="vendortr">
+    <td>
+      {{ vendor.name }}
+    </td>
+    <td>
+      {{ vendor.address }}
+    </td>
+    <td>
+      {{ vendor.contact }}
+    </td>
+    <td class="button-td">
+        <button class="edit-button" ><mat-icon>edit</mat-icon></button>
+        <button class="delete-button" (click)="deleteVendorItem(i)"><mat-icon>delete</mat-icon></button>
+      </td>
+      
+      
+  </tr>
+  
+    </tbody>
+  </table>
+  
+
+
+
+
+                        <table class="beautiful-table">
+                          <thead>
+                            <tr>
+                              <th>Expense Types</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let expenseType of expenseTypes; let i = index">
+                              <td>
+                                {{ expenseType }}
+                                <button class="edit-button" (click)="editItem(expenseTypes, i, 'new value')">Edit</button>
+                                <button class="delete-button" (click)="deleteItem(expenseTypes, i)">Delete</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="beautiful-table">
+                            <thead>
+                              <tr>
+                               
+                                <th>Categories</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let categories of categories; let i = index">
+                                <td>
+                                  {{ categories }}
+                                  <button class="edit-button" (click)="editItem(expenseTypes, i, 'new value')">Edit</button>
+                                  <button class="delete-button" (click)="deleteItem(expenseTypes, i)">Delete</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                  
+                        <table class="beautiful-table">
+                          <thead>
+                            <tr>
+                              <th>Brands</th>
+                       
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let brand of brands; let i = index">
+                              <td>
+                                {{ brand }}
+                                <button class="edit-button" (click)="editItem(brands, i, 'new value')">Edit</button>
+                                <button class="delete-button" (click)="deleteItem(brands, i)">Delete</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                  
+                  
+                        <table class="beautiful-table">
+                          <thead>
+                            <tr>
+                              <th>Transaction Types</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let transactionType of transactionTypes; let i = index">
+                              <td>
+                                {{ transactionType }}
+                                <button class="edit-button" (click)="editItem(transactionTypes, i, 'new value')">Edit</button>
+                                <button class="delete-button" (click)="deleteItem(transactionTypes, i)">Delete</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+    
+    
+      
+
+  </div>
+        

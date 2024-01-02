@@ -1,0 +1,186 @@
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.063rem 0 1.25rem 0 #d2d2d2;
+    
+    text-shadow: 0.5px 0.5px 1px #177d2c;
+    margin-top: 13px;
+  }
+  .header-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure full height */
+  }
+  
+  .center-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text inside .center-header */
+  }
+  
+  .header1 {
+    margin: 0; /* Remove any default margin */
+  }
+
+  #chart {
+    
+   margin-bottom: 20rem;
+    width: 30%;
+   padding-right: 5rem;
+    padding-left: 60px; 
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0; /* Margin to separate main content */
+    padding: 20px 0; /* Padding to maintain layout above .main-content */
+  
+
+  }
+
+  .main-content {
+    flex: 2; 
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    margin: 20px;
+    
+    
+  }
+
+  ----------------
+
+  /* transaction-table.component.css */
+
+  .table-container {
+    max-width: 800px;
+    
+    background-color: #fff;
+  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+   
+  }
+
+  th {
+    background-color: #ebf7ff;
+    color: #2b8eeb;
+    font-weight: 1000;
+  }
+  
+  th, td {
+    padding: 9px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #e4ffe3;
+  }
+
+  td:nth-child(2) {
+
+    padding-left: 2rem;
+  }
+
+  
+  
+  thead {
+    background-color: #f0f0f0;
+  }
+  
+  .sort-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .sorting-options {
+    margin-bottom: 10px;
+  }
+  
+  .sorting-options select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .pagination label {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  
+  .pagination select, .pagination button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d3ffe7;
+    font-weight: 750;
+    color: rgb(45, 189, 72);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination select:hover, .pagination button:hover {
+    background-color: #afdfc5;
+  }
+
+  
+  /* Add alternating row background colors */
+.even-row {
+    background-color: #fff; /* White background for even rows */
+  }
+  
+  .odd-row {
+    background-color: #f8fffa; /* Pink background for odd rows */
+  }
+
+  .table-container th:first-child,
+.table-container td:first-child {
+  text-align: right; /* Align S.No column to the right */
+}
+
+.table-container td:nth-child(2),
+.table-container td:nth-child(5) {
+  text-align: right; /* Align Quantity and Tax Amount columns to the right */
+}
+  
+  /* You can further customize and enhance these styles as needed to match your design preferences. */
+  
+  
+
+  

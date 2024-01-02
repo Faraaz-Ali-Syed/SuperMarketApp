@@ -1,0 +1,79 @@
+<div class="margin">
+    <div class="product-wrapper">
+      <div class="featured-product">
+        <div class="card">
+    <div class="card__title">
+      <div class="icon">
+        <a href="products"><i class="fa fa-arrow-left"></i> Go Back</a>
+      </div>
+      <h3>Featured Sale</h3>
+    </div>
+    <div class="card__body">
+      <div class="half">
+        <div class="featured_text">
+          <h1>Stationary Material (Bulk)</h1>
+          <p class="sub">Offer Price</p>
+          <p class="price">$199.00</p>
+        </div>
+        <div class="image">
+          <img src="https://th.bing.com/th/id/R.6c95129afe9b59a0c4f7a19fdff32b54?rik=YB8ZAajtrqRykA&riu=http%3a%2f%2fshoplocal.dundalk.ie%2fwp-content%2fuploads%2f2016%2f07%2fstationery1.jpg&ehk=zEcwLLUlUPMOQ5L8VGqxrDcNmoNgersVHLB6smbTPJE%3d&risl=&pid=ImgRaw&r=0" alt="">
+        </div>
+      </div>
+      <div class="half">
+        <div class="description">
+          <p> Stock up on high-quality ballpoint pens for all your writing needs. This bulk pack includes 100 reliable and smooth-writing pens. Perfect for office supplies, schools, and businesses.</p>
+        </div>
+        <span class="stock">MRP: $2(avg)
+            <i class="fa fa-pen"></i> In stock</span>
+        <div class="reviews">
+          <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <span>(64 reviews)</span>
+        </div>
+      </div>
+    </div>
+    <div class="card__footer">
+      <div class="recommend">
+        <p>Recommended by</p>
+        <h3>Inventiva</h3>
+      </div>
+      <div class="action">
+        <button type="button" href="kart">Buy Now</button>
+      </div>
+      <div class="action">
+        <button type="button" href="kart">Add to cart</button>
+      </div>
+    </div>
+</div>
+
+
+<div class="midclass">
+    <div class="card1">
+      <div class="card-content1">
+        <p class="offer" style="font-weight: bold; font-size: 1.5em;">Offer Details <span class="tc">Valid till 29th Oct 2023</span></p>
+        <p class="offer">Bank Offer 5% off on Flipkart Axis Bank Credit Card EMI Txns, up to $100 on orders of $100 and above <span class="tc">T&C</span></p>
+        <p class="offer">Bank Offer 10% off on ICICI Bank Debit Card, up to $100 on orders of $100 and above <span class="tc">T&C</span></p>
+        <p class="offer">Bank Offer 10% off on ICICI Bank Debit Card EMI Txns, up to $100 on orders of $100 and above <span class="tc">T&C</span></p>
+        <p class="offer special-price">Special Price Get extra ₹39 off (price inclusive of cashback/coupon)</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+      
+  </div><div class="card">  <div class="other-products">
+    <div class="product-list">
+        <div class="product-card" *ngFor="let product of products">
+          <img [src]="product.image" alt="{{product.name}}" class="product-image">
+          <h2 class="product-name">{{product.name}}</h2>
+          <p class="product-price">$ {{product.price}}</p>
+          <button class="add-to-cart-button">Check it out!</button>
+        </div>
+      </div>
+        </div></div></div></div>

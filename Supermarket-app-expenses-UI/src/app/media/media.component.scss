@@ -1,0 +1,142 @@
+
+.example-spacer {
+    flex: 2 2 auto;
+
+  }
+
+  :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .example-container {
+    width: 1650px;
+    height: 850px;
+    margin: 20px;
+    border: 1px solid #6500e0;
+  }
+
+  .main-body {
+    padding-top:20px;
+    margin-left: 20px;
+    max-width: 1248px;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+
+  .btn {
+   
+    padding: 30px;
+    margin-bottom: 27px;
+    
+   
+  }
+
+  .half-width {
+    width: 50% !important;
+     /* The input inside mat-form-field will take up 50% of its parent's width */
+  }
+  
+.spacer {
+  flex: 0 0 16px; /* Add a fixed width spacer of 16px */
+}
+
+  .button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  justify-content: space-between;
+  margin-left: 80px;
+  gap:400px /* Add margin for spacing */
+  
+}
+
+  .datepicker {
+    
+    margin-left: 100px;
+  }
+
+  .header {
+    margin-left: 200px;
+  }
+
+  .subheader {
+    margin-left: 100px;
+  }
+
+  .tabs {
+    size: 1000px;
+    margin-left: 500px;
+  }
+
+  .subtabs {
+    margin-top: 300px;
+    margin-left: 500px;
+  }
+
+  header {
+    background-color: #005f18;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.right-align {
+  text-align: right;
+} 
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.063rem 0 1.25rem 0 #d2d2d2;
+  
+  text-shadow: 0.5px 0.5px 1px #125c2b;
+  margin-top: 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header1 {
+  margin: 0; /* Remove any default margin */
+}
+
+/* Add this CSS to your component's style or CSS file */
+.table-container table {
+  width: 50%;
+  border-collapse: collapse;
+
+}
+
+.table-container td,
+.table-container th {
+  padding-left: 30px;
+ 
+}
+
+/* CSS for changing the background color on hover */
+table.mat-table tr:hover {
+  background-color: #838383; /* Replace with your desired hover color */
+  cursor: pointer;
+}
+
+#tbwidth {
+  
+  width: 100%;
+  margin-left: 80px;
+  align-items: center;
+ 
+}
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<mat-toolbar color="primary" class="center-text" style=" background-color: #622ab7;">
+    <div class="header-container" >
+      <span class="header1">Dashboard</span>
+    </div>
+    
+</mat-toolbar> 
+<mat-toolbar color="primary" class="center-text" style=" background-color: #ffffff; color:#5be29a;">
+  <div class="header-container" >
+    <span class="header1">Transactions</span>
+  </div>
+</mat-toolbar>
+
+
+
+<div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [yaxis]="chartOptions.yaxis"
+      [xaxis]="chartOptions.xaxis"
+      [labels]="chartOptions.labels"
+      [stroke]="chartOptions.stroke"
+      [title]="chartOptions.title"
+      [dataLabels]="chartOptions.dataLabels"
+      [fill]="chartOptions.fill"
+      [tooltip]="chartOptions.tooltip"
+    ></apx-chart>
+  </div>
+  
+  <div style="text-align: center;">
+    <button mat-raised-button class="btn" style="align-items: center;">Create Transaction</button>
+  </div>
+  <div class="table-container">
+    <div class="sort-options">
+      <label for="transaction-type-select">Sort by Transaction Type:</label>
+      <select id="transaction-type-select" [(ngModel)]="selectedTransactionType">
+        <option value="all">All</option>
+        <option value="Sales">Sales</option>
+        <option value="Purchases">Purchases</option>
+      </select>
+    </div>
+
+    
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th style="padding-left: 40px;">Quantity</th>
+          <th>Transaction Type</th>
+          <th>Transaction Date</th>
+          <th>Tax Amount</th>
+          <th>Download Invoice</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tbody>
+            <tr *ngFor="let transaction of filterTransactions(); let i = index" [ngClass]="getRowClass(i)">
+              <td>{{ transaction.sno }}</td>
+              <td style="padding-right: 100px;">{{ transaction.quantity }}</td>
+              <td>{{ transaction.type }}</td>
+              <td>{{ transaction.date }}</td>
+              <td style="padding-right: 100px;">{{ transaction.tax }}%</td>
+              <td><button class="download-button"  title="Download Invoice"><mat-icon>download</mat-icon></button></td>
+            </tr>
+            
+          </tbody>
+    </table>
+
+    
+  
+  </div>
+  
